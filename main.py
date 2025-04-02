@@ -7,15 +7,18 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
+#Загрузка и установка иконки
 pygame.display.set_caption("Игра в Тир")
 icon = pygame.image.load("img/Tir.png")
 pygame.display.set_icon(icon)
 
+#Загрузка заставки
 splash_img = pygame.image.load("img/Tir.png")
 screen.blit(splash_img, (0, 0))
 pygame.display.update()
 pygame.time.delay(1000)
 
+#Загрузка и установка мишени
 target_img = pygame.image.load("img/target.png")
 target_width = 80
 target_height = 80
