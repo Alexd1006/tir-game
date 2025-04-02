@@ -12,6 +12,10 @@ screen = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
 pygame.display.set_caption("Игра в Тир")
 icon =  pygame.image.load("img/Tir.png")
 pygame.display.set_icon(icon)
+screen.blit(icon, (0, 0))
+pygame.display.update()
+
+
 
 target_img = pygame.image.load("img/target.png")
 target_width = 80
